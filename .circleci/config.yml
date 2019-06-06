@@ -5,7 +5,7 @@ jobs: #pipline
     working_directory: ~/java-courses-api # ciezka do projektu
 
     docker: #stawia niezalezne srodowisko
-    - image: circleci/openjdk:8-stretch-node-browsers-legacy
+    - image: circleci/openjdk:8-jdk
       environment:
         JDBC_DATABASE_URL: jdbc:postgresql://127.0.0.1/testdb4
         JDBC_DATABASE_USERNAME: root
